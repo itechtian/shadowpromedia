@@ -1,0 +1,173 @@
+
+	body{
+		
+		margin: 0;
+		padding: 0;
+		font-size: 16px;
+		font-family: serif;
+		
+		
+	}
+	
+	.header{
+		
+	width: 100%;
+	height: 50vh;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	text-align: center;
+		
+	}
+	
+	.intro-middle{
+		
+		border:solid 2px white;
+		text-align: center;
+		height: auto;
+		flex-wrap: nowrap;
+		flex-shrink: 0;
+		color: whitesmoke;
+		display: inline-block;
+		padding: 10px;
+		margin: 5px;
+		transform: translateY(70%);
+		
+	}
+	
+	@media(max-width:768px){
+	
+		nav{display: none;}	
+	    .oi{display: none;}	
+		.oi2{display: none;}
+	}
+
+	
+	nav{
+		
+		text-align: center;
+		border-bottom: solid;
+		
+	}
+	
+	nav li{
+		
+		display: inline;
+		padding: 32px;
+		cursor: pointer;
+		
+	}
+	
+	nav li:hover{
+		
+		color: deeppink;
+		
+	}
+	
+	nav a{
+		
+		color: aliceblue
+	}
+	
+	nav a:hover{
+		
+		color: deeppink;
+		text-decoration: none;
+	}
+	
+	.oi{
+		display: flex;
+		align-items: center;
+		width: 40%;
+		justify-content: center;
+		z-index: 99;
+		position: absolute;
+		left: 40%;
+		visibility: hidden;
+		
+	}
+	.oi li{
+		display: block;
+		padding: 9px;
+		
+	}
+	.oi2 li{
+		display: block;
+		padding: 10px;
+		
+	}
+	
+	.oi2 li a:hover{
+		color: deeppink;
+		text-decoration: none;
+		
+	}
+	
+	.oi li a:hover{
+		color: deeppink;
+		text-decoration: none;
+		
+	}
+	
+	.oi li a{
+		color: aliceblue;
+		
+	}
+	
+	.oi2 li a{
+		color: aliceblue;
+		
+	}
+	
+	.oi2{
+		display: flex;
+		align-items: center;
+		width: 40%;
+		justify-content: center;
+		z-index: 99;
+		position: absolute;
+		left: 60%;
+		visibility: hidden;
+		
+		
+	}
+	
+	.close{
+		
+		position: absolute;
+		left: 90%;
+		top: 5%;
+		font-size: 40px;
+	}
+	
+	.slideup{
+		
+		animation-name:slideupanimation;
+		animation-duration: 1s;
+		visibility: visible;
+	}
+	
+	@keyframes slideupanimation {
+		
+		0% {
+			opacity: 0;
+			transform: translateY(60%);
+		}
+		50% {
+			
+			opacity: .9;
+			transform: translateY(0%);
+		}
+		100% {
+			
+			opacity: 1;
+			transform: translateY(0%);
+		}
+	}
+	
+	.vistors li{
+		
+		display: inline;
+		padding: 5px;
+		list-style: none;
+	}
