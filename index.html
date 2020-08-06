@@ -112,21 +112,16 @@
     <div class="w3-section d-flex w3-bottombar w3-padding-16">
       <span class="w3-margin-right">Filter:</span> 
       <button class="w3-button w3-black">ALL</button>
-      <div class="dropdown show ml-3">
-      	<a class="btn btn-secondary dropdown-toggle" role="button" id="dropdownMenuLink" aria-haspopup="true" aria-expanded="false">
-      		
-      		<i class="fa fa-diamond w3-margin-right"> Weddings</i>
-      		
-      	</a>
-      	
-      	<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-      		
-      		<div class="dropdown-link" href=""> Birthdays </div>
-      		<div class="dropdown-link" href=""> photoshots </div>
-      		
-      	</div>
-      	
-	  </div>
+     <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Weddings
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item" href="#">Birthday</a>
+    <a class="dropdown-item" href="#">P<i class="fa fa-photo w3-margin-right"> hotoshot</a>
+    <a class="dropdown-item" href="#"><i class="fa fa-map-pin w3-margin-right"> Buy Art </a>
+  </div>
+</div>
       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-photo w3-margin-right"></i>Photos</button>
       <button class="w3-button w3-white w3-hide-small"><i class="fa fa-map-pin w3-margin-right"></i>Buy Art</button>
     </div>
